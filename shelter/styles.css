@@ -20,6 +20,8 @@ h2 {
 
 .section-container {
   padding: 80px 40px 100px;
+  max-width: 1280px;
+  margin: auto;
 }
 
 /* styles */
@@ -162,8 +164,11 @@ h2 {
 }
 
 /* OUR FRIENDS */
-.our-friends-section {
+#our-friends {
   background-color: var(--color-light-l);
+}
+
+.our-friends-section {
   display: flex;
   flex-direction: column;
   gap: 60px;
