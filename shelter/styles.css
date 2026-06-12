@@ -3,14 +3,14 @@
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 44px;
   line-height: 130%;
   max-width: 310px;
 }
 
 h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 6%;
@@ -33,6 +33,7 @@ h2 {
   --color-dark-3xl: #292929;
   --color-dark-xl: #4c4c4c;
   --color-dark-l: #545454;
+  --color-dark-m: #b2b2b2;
 
   --color-light-l: #f6f6f6;
   --color-light-s: #fafafa;
@@ -42,7 +43,7 @@ h2 {
 .start-screen {
   background:
     radial-gradient(circle at 15% 10%, #5b483a 0%, #262425 100%),
-    url("assets/bg/start-screen-background.jpg");
+    url('assets/bg/start-screen-background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,7 +74,7 @@ h2 {
 
 #logo-text {
   color: var(--color-primary);
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 110%;
   letter-spacing: 6%;
   font-size: 2rem;
@@ -133,7 +134,7 @@ h2 {
   background-color: var(--color-primary);
   border-radius: 100px;
 
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 6%;
@@ -218,7 +219,7 @@ h2 {
 }
 
 .pet-name {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
   letter-spacing: 6%;
   color: var(--color-dark-l);
@@ -268,8 +269,70 @@ h2 {
 
 .item-name {
   color: var(--color-dark-l);
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 6%;
+}
+
+/* IN ADDITION */
+#in-addition {
+  background-color: var(--color-light-l);
+}
+
+.in-addition-section > img {
+  max-width: 505px;
+  height: auto;
+}
+
+.in-addition-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.in-addition-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 380px;
+}
+
+.in-addition-header {
+  text-align: start;
+  max-width: 300px;
+}
+
+.bank-name {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 6%;
+  color: var(--color-dark-l);
+}
+
+.credit-card-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 15px;
+  background-color: var(--color-primary);
+  width: fit-content;
+  border-radius: 9px;
+}
+
+.card-number {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 6%;
+  color: var(--color-dark-l);
+}
+
+.legal-info {
+  font-size: 12px;
+  line-height: 18px;
+  font-style: italic;
+  color: var(--color-dark-m);
+  width: 100%;
 }
