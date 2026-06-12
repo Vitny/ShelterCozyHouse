@@ -1,5 +1,6 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -28,6 +29,7 @@ h2 {
 
 :root {
   --color-primary: #f1cdb3;
+  --color-primary-light: #fddcc4;
 
   --color-dark: #cdcdcd;
   --color-dark-3xl: #292929;
@@ -144,6 +146,11 @@ h2 {
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 6%;
+
+  transition: background-color 0.3s ease;
+}
+.btn-main:hover {
+  background-color: var(--color-primary-light);
 }
 
 /* ABOUT */
@@ -202,6 +209,14 @@ h2 {
   padding: 21px 17px;
   border: solid 2px var(--color-primary);
   border-radius: 100px;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.btn-slider:hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
 }
 
 .btn-slider > img {
@@ -253,6 +268,18 @@ h2 {
 
   border: solid 2px var(--color-primary);
   border-radius: 100px;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.card-pet {
+  cursor: pointer;
+}
+
+.card-pet:hover .btn-pet {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
 }
 
 /* HELP */
