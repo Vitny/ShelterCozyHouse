@@ -12,7 +12,7 @@ h1 {
 h2 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 35px;
-  line-height: 130%;
+  line-height: 128%;
   letter-spacing: 6%;
   color: var(--color-dark-l);
   text-align: center;
@@ -43,7 +43,7 @@ h2 {
 /* START SCREEN */
 .start-screen {
   background:
-    radial-gradient(circle at 15% 10%, #5b483a 0%, #262425 100%),
+    radial-gradient(circle at -10% -10%, #5b483a 0%, #262425 100%),
     url('assets/bg/start-screen-background.jpg');
   background-size: cover;
   background-position: center;
@@ -70,6 +70,7 @@ h2 {
 .logo-button {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
 
@@ -127,6 +128,10 @@ h2 {
   line-height: 160%;
 }
 
+#start-button {
+  color: var(--color-dark-3xl);
+}
+
 .btn-main {
   display: flex;
   width: fit-content;
@@ -145,11 +150,13 @@ h2 {
 
 .about-header {
   max-width: 370px;
+  text-align: left;
 }
 .about-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 120px;
 }
 
 .about-content {
@@ -178,7 +185,7 @@ h2 {
 }
 
 .our-friends-header {
-  max-width: 410px;
+  max-width: 400px;
 }
 
 .our-friends-content {
@@ -192,9 +199,13 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 23px 19px;
+  padding: 21px 17px;
   border: solid 2px var(--color-primary);
   border-radius: 100px;
+}
+
+.btn-slider > img {
+  width: 15px;
 }
 
 .btn-slider.right {
@@ -206,6 +217,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 0 7px;
 }
 
 .card-pet {
@@ -230,7 +242,9 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 45px;
+  padding: 13px 43px;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
 
   font-size: 17px;
   line-height: 130%;
@@ -250,7 +264,7 @@ h2 {
 }
 
 .help-header {
-  max-width: 308px;
+  max-width: 310px;
 }
 
 .help-list {
@@ -282,13 +296,13 @@ h2 {
 }
 
 .in-addition-section > img {
-  max-width: 505px;
-  height: auto;
+  max-height: 261px;
 }
 
 .in-addition-section {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 
@@ -339,10 +353,9 @@ h2 {
 }
 
 /* FOOTER */
-
 #footer {
   background:
-    radial-gradient(circle at 15% 10%, #5b483a 0%, #262425 100%),
+    radial-gradient(circle at -10% -10%, #5b483a 0%, #262425 100%),
     url('assets/bg/start-screen-background.jpg');
   background-size: cover;
   background-position: center;
@@ -359,13 +372,14 @@ h2 {
 
 .adress-info {
   max-width: 300px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
 }
 .contacts-info {
   max-width: 279px;
-}
-
-.adress-info,
-.contacts-info {
+  margin-top: 16px;
   display: flex;
   flex-direction: column;
   gap: 40px;
