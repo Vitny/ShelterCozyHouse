@@ -95,6 +95,9 @@ h2 {
   display: flex;
   gap: 35px;
 }
+.nav-list > li > a:hover {
+  color: var(--color-light-s);
+}
 
 .nav-list > li > a {
   line-height: 160%;
@@ -109,6 +112,7 @@ h2 {
 
 #active-link {
   border-bottom: solid 3px var(--color-primary);
+  pointer-events: none;
 }
 
 .start-section-wrapper {
@@ -361,6 +365,11 @@ h2 {
   background-color: var(--color-primary);
   width: fit-content;
   border-radius: 9px;
+  transition: background-color 0.3s ease;
+}
+
+.credit-card-info:hover {
+  background-color: var(--color-primary-light);
 }
 
 .card-number {
@@ -383,7 +392,7 @@ h2 {
 #footer {
   background:
     url('assets/bg/noise_transparent.png'),
-    radial-gradient(circle at 15% 40%, #5b483a 0%, #1A1A1C 100%);
+    radial-gradient(circle at 15% 40%, #5b483a 0%, #1a1a1c 100%);
   background-repeat: repeat;
   background-size: auto;
 }

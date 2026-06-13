@@ -16,6 +16,10 @@
   color: var(--color-dark-l);
 }
 
+.nav-list > li > a:hover {
+  color: var(--color-dark-3xl);
+}
+
 #active-link > a {
   color: var(--color-dark-3xl);
 }
