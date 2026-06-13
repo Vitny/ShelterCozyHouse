@@ -30,10 +30,12 @@
 }
 
 .pets-cards {
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
   padding: unset;
+  padding: 15px 0;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 40px;
+  flex-wrap: wrap;
 }
 
 .pets-navigation {
@@ -83,6 +85,11 @@
   background-color: var(--color-primary-light);
   border-color: var(--color-primary-light);
 }
+
+.active {
+  background-color: var(--color-primary);
+}
+
 .inactive svg {
   fill: var(--color-dark-s);
 }
