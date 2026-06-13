@@ -46,11 +46,10 @@ h2 {
 /* START SCREEN */
 .start-screen {
   background:
-    radial-gradient(circle at -10% -10%, #5b483a 0%, #262425 100%),
-    url('assets/bg/start-screen-background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    url('assets/bg/noise_transparent.png'),
+    radial-gradient(ellipse 120% 110% at 20% 20%, #5b483a 0%, #262425 100%);
+  background-repeat: repeat;
+  background-size: auto;
 }
 
 .start-screen-wrapper {
@@ -383,11 +382,10 @@ h2 {
 /* FOOTER */
 #footer {
   background:
-    radial-gradient(circle at -10% -10%, #5b483a 0%, #262425 100%),
-    url('assets/bg/start-screen-background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    url('assets/bg/noise_transparent.png'),
+    radial-gradient(circle at 15% 40%, #5b483a 0%, #1A1A1C 100%);
+  background-repeat: repeat;
+  background-size: auto;
 }
 
 .footer-container {
