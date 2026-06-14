@@ -436,7 +436,7 @@ h2 {
   align-items: center;
 }
 
-#footer-item-text {
+.footer-item-text {
   color: var(--color-primary);
 
   font-family: Georgia, 'Times New Roman', Times, serif;
