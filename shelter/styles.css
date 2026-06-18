@@ -379,8 +379,12 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  background-color: var(--color-light-xl);
+  background-color: var(--color-light-s);
   border-radius: 9px;
+}
+
+.pet-photo {
+  background-color: var(--color-light-s);
 }
 
 .pet-name {
@@ -412,6 +416,10 @@ h2 {
 
 .card-pet {
   cursor: pointer;
+}
+
+.card-pet:hover {
+  background-color: var(--color-light-xl);
 }
 
 .card-pet:hover .btn-pet {
