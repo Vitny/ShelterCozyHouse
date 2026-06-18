@@ -325,9 +325,10 @@ h2 {
 
 .our-friends-content {
   width: 100%;
+  flex-direction: column;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .btn-slider {
@@ -340,6 +341,14 @@ h2 {
   transition:
     background-color 0.3s ease,
     border-color 0.3s ease;
+}
+
+.our-friends-buttons {
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
 }
 
 .btn-slider:hover {
@@ -358,9 +367,9 @@ h2 {
 .pets-cards {
   width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  padding: 0 7px;
+  gap: 90px;
 }
 
 .card-pet {
