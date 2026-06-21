@@ -28,6 +28,18 @@
   color: var(--color-dark-3xl);
 }
 
+@media (max-width: 900px) {
+  .pets-header {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .pets-header {
+    padding: 30px 20px;
+  }
+}
+
 /* OUR FRIENDS */
 .our-friends-section {
   gap: 45px;
@@ -101,4 +113,55 @@
 .inactive {
   border-color: var(--color-dark-s);
   pointer-events: none;
+}
+
+@media (max-width: 1100px) {
+  .card-pet:nth-child(3) {
+    display: flex;
+  }
+}
+
+@media (max-width: 900px) {
+  .our-friends-section {
+    gap: 30px;
+    padding-bottom: 76px;
+  }
+
+  .pets-cards {
+    padding: 0;
+  }
+
+  .card-pet:nth-child(2) {
+    display: flex;
+  }
+
+  .card-pet:nth-child(7),
+  .card-pet:nth-child(8) {
+    display: none;
+  }
+
+  .pets-navigation {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .pets-navigation {
+    gap: 10px;
+  }
+
+  .card-pet:nth-child(4),
+  .card-pet:nth-child(5),
+  .card-pet:nth-child(6) {
+    display: none;
+  }
+
+  .our-friends-section {
+    gap: 42px;
+    padding-bottom: 42px;
+  }
+  
+  .pets-navigation {
+    margin: 0;
+  }
 }
