@@ -509,6 +509,53 @@ h2 {
   letter-spacing: 6%;
 }
 
+@media (max-width: 800px) {
+  .help-list {
+    gap: 55px 60px;
+  }
+
+  .help-item {
+    width: 170px;
+  }
+}
+
+@media (max-width: 400px) {
+  .help-section {
+    gap: 42px;
+  }
+
+  .help-list {
+    gap: 30px;
+  }
+
+  .help-list img {
+    width: 50px;
+  }
+
+  .help-item {
+    width: 130px;
+    gap: 20px;
+  }
+
+  .item-name {
+    font-size: 15px;
+    line-height: 113%;
+  }
+
+  .help-header {
+    font-size: 25px;
+    text-align: center;
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 340px) {
+  .help-list {
+    padding: 0 5px;
+    justify-content: start;
+  }
+}
+
 /* IN ADDITION */
 #in-addition {
   background-color: var(--color-light-l);
