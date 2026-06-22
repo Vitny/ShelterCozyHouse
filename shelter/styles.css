@@ -1,3 +1,9 @@
+body.lock-scroll {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
@@ -5,14 +11,14 @@
 }
 
 h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 44px;
   line-height: 130%;
   max-width: 310px;
 }
 
 h2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 35px;
   line-height: 128%;
   letter-spacing: 6%;
@@ -24,6 +30,24 @@ h2 {
   padding: 80px 40px 100px;
   max-width: 1280px;
   margin: auto;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(41, 41, 41, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+
+  z-index: 998;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* styles */
@@ -47,7 +71,7 @@ h2 {
 /* START SCREEN */
 .start-screen {
   background:
-    url('assets/bg/noise_transparent.png'),
+    url("assets/bg/noise_transparent.png"),
     radial-gradient(ellipse 120% 110% at 20% 20%, #5b483a 0%, #262425 100%);
   background-repeat: repeat;
   background-size: auto;
@@ -79,7 +103,7 @@ h2 {
 
 #logo-text {
   color: var(--color-primary);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 110%;
   letter-spacing: 6%;
   font-size: 2rem;
@@ -96,6 +120,7 @@ h2 {
   display: flex;
   gap: 35px;
 }
+
 .nav-list > li > a:hover {
   color: var(--color-light-s);
 }
@@ -145,7 +170,7 @@ h2 {
   color: var(--color-dark-3xl);
 }
 
-.burger-menu.inactive {
+.burger-menu {
   display: none;
 }
 
@@ -157,7 +182,7 @@ h2 {
   background-color: var(--color-primary);
   border-radius: 100px;
 
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 6%;
@@ -174,6 +199,7 @@ h2 {
     gap: 60px;
     padding: 30px 30px 0;
   }
+
   .start-section-wrapper {
     flex-direction: column;
     align-items: center;
@@ -198,12 +224,45 @@ h2 {
 
 @media (max-width: 767px) {
   .nav-list {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: var(--color-dark-3xl);
+    width: 320px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    transform: translateX(100vw);
   }
 
-  .burger-menu.inactive {
+  .nav-list > li {
+    width: fit-content;
+    font-size: 32px;
+    line-height: 160%;
+  }
+
+  .nav-list > li > a {
+    font-size: 32px;
+    line-height: 160%;
+  }
+
+  .burger-menu {
     display: block;
     cursor: pointer;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .burger-menu.active {
+    transform: rotate(90deg);
+  }
+
+  .nav-list.active {
+    transform: translateX(0);
+
+    z-index: 999;
   }
 }
 
@@ -389,7 +448,7 @@ h2 {
 }
 
 .pet-name {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   letter-spacing: 6%;
   color: var(--color-dark-l);
@@ -401,7 +460,7 @@ h2 {
   align-items: center;
   padding: 13px 43px;
 
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 
   font-size: 17px;
   line-height: 130%;
@@ -503,7 +562,7 @@ h2 {
 
 .item-name {
   color: var(--color-dark-l);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 6%;
@@ -585,7 +644,7 @@ h2 {
 }
 
 .bank-name {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 15px;
   line-height: 110%;
   letter-spacing: 6%;
@@ -608,7 +667,7 @@ h2 {
 }
 
 .card-number {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 6%;
@@ -669,7 +728,7 @@ h2 {
 /* FOOTER */
 #footer {
   background:
-    url('assets/bg/noise_transparent.png'),
+    url("assets/bg/noise_transparent.png"),
     radial-gradient(circle at 15% 40%, #5b483a 0%, #1a1a1c 100%);
   background-repeat: repeat;
   background-size: auto;
@@ -703,7 +762,7 @@ h2 {
   color: var(--color-light-xl);
   text-align: left;
 
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 6%;
@@ -718,7 +777,7 @@ h2 {
 .footer-item-text {
   color: var(--color-primary);
 
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 6%;
