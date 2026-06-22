@@ -9,92 +9,183 @@
     <link rel="stylesheet" href="../../reset.css" />
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="pets.css" />
+  </head>
+
   <body>
-    <header id="#header" >
+    <header id="#header">
       <div class="pets-header">
-        <a class="logo-button" href="https://vitny.github.io/ShelterCozyHouse/shelter/">
+        <a
+          class="logo-button"
+          href="https://vitny.github.io/ShelterCozyHouse/shelter/"
+        >
           <h1 id="logo-text">Cozy House</h1>
           <p class="logo-subtext">Shelter for pets in Boston</p>
         </a>
         <nav>
           <ul class="nav-list">
-            <li> <a href="https://vitny.github.io/ShelterCozyHouse/shelter/">About the shelter</a></li>
-            <li id="active-link"> <a href="#our-friends">Our pets</a></li>
-            <li> <a href="https://vitny.github.io/ShelterCozyHouse/shelter/#help">Help the shelter</a></li>
-            <li> <a href="#footer">Contacts</a></li>
+            <li>
+              <a href="https://vitny.github.io/ShelterCozyHouse/shelter/"
+                >About the shelter</a
+              >
+            </li>
+            <li id="active-link"><a href="#our-friends">Our pets</a></li>
+            <li>
+              <a href="https://vitny.github.io/ShelterCozyHouse/shelter/#help"
+                >Help the shelter</a
+              >
+            </li>
+            <li><a href="#footer">Contacts</a></li>
           </ul>
+          <svg
+            class="burger-menu inactive"
+            width="30"
+            height="22"
+            viewBox="0 0 30 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line y1="21" x2="30" y2="21" stroke="black" stroke-width="2" />
+            <line y1="11" x2="30" y2="11" stroke="black" stroke-width="2" />
+            <line y1="1" x2="30" y2="1" stroke="black" stroke-width="2" />
+          </svg>
         </nav>
       </div>
     </header>
     <main>
       <section id="our-friends">
         <div class="section-container our-friends-section">
-          <h2 class="our-friends-header">Our friends who <br>are looking for a house</h2>
-            <div class="pets-cards">
-              <div class="card-pet">
-                <img class="pet-photo" src="../../assets/png/pets/pets-katrine.png" alt="photo of a pet">
-                <span class="pet-name">Katrine</span>
-                <button class="btn-pet">Learn more</button>
-              </div>
-              <div class="card-pet">
-                <img class="pet-photo" src="../../assets/png/pets/pets-jennifer.png" alt="photo of a pet">
-                <span class="pet-name">Jennifer</span>
-                <button class="btn-pet">Learn more</button>
-              </div>
-              <div class="card-pet">
-                <img class="pet-photo" src="../../assets/png/pets/pets-woody.png" alt="photo of a pet">
-                <span class="pet-name">Woody</span>
-                <button class="btn-pet">Learn more</button>
-              </div>
-              <div class="card-pet">
-                <img class="pet-photo" src="../../assets/png/pets/pets-sophia.png" alt="photo of a pet">
-                <span class="pet-name">Sophia</span>
-                <button class="btn-pet">Learn more</button>
-              </div>
-              <div class="card-pet">
-                <img class="pet-photo" src="../../assets/png/pets/pets-timmy.png" alt="photo of a pet">
-                <span class="pet-name">Timmy</span>
-                <button class="btn-pet">Learn more</button>
-              </div>
-              <div class="card-pet">
-                <img class="pet-photo" src="../../assets/png/pets/pets-charly.png" alt="photo of a pet">
-                <span class="pet-name">Charly</span>
-                <button class="btn-pet">Learn more</button>
-              </div>
-              <div class="card-pet">
-                <img class="pet-photo" src="../../assets/png/pets/pets-scarlet.png" alt="photo of a pet">
-                <span class="pet-name">Scarlett</span>
-                <button class="btn-pet">Learn more</button>
-              </div>
-              <div class="card-pet">
-                <img class="pet-photo" src="../../assets/png/pets/pets-fredie.png" alt="photo of a pet">
-                <span class="pet-name">Freddie</span>
-                <button class="btn-pet">Learn more</button>
-              </div>
+          <h2 class="our-friends-header">
+            Our friends who <br />are looking for a house
+          </h2>
+          <div class="pets-cards">
+            <div class="card-pet">
+              <img
+                class="pet-photo"
+                src="../../assets/png/pets/pets-katrine.png"
+                alt="photo of a pet"
+              />
+              <span class="pet-name">Katrine</span>
+              <button class="btn-pet">Learn more</button>
             </div>
-            <div class="pets-navigation">
-              <button class="btn-first-page inactive">
-                <svg width="24" height="11" viewBox="0 0 24 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.0333 10.498L9.72748e-05 5.80078V4.69727L9.0333 0V1.33789L1.52353 5.24414L9.0333 9.16016V10.498ZM23.1044 10.498L14.0712 5.80078V4.69727L23.1044 0V1.33789L15.5946 5.24414L23.1044 9.16016V10.498Z"/>
-                </svg>
-              </button>
-              <button class="btn-prev-page inactive">
-                <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.0332 10.498L0 5.80078V4.69727L9.0332 0V1.33789L1.52344 5.24414L9.0332 9.16016V10.498Z"/>
-                </svg>
-              </button>
-              <button class="btn-current-page active">1</button>
-              <button class="btn-next-page">
-                <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.0332 5.80078L0 10.498V9.16016L7.50977 5.24414L0 1.33789V0L9.0332 4.69727V5.80078Z"/>
-                </svg>
-              </button>
-              <button class="btn-last-page">
-                <svg width="24" height="11" viewBox="0 0 24 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.0333 5.80078L9.72748e-05 10.498V9.16016L7.50986 5.24414L9.72748e-05 1.33789V0L9.0333 4.69727V5.80078ZM23.1044 5.80078L14.0712 10.498V9.16016L21.581 5.24414L14.0712 1.33789V0L23.1044 4.69727V5.80078Z"/>
-                </svg>
-              </button>
+            <div class="card-pet">
+              <img
+                class="pet-photo"
+                src="../../assets/png/pets/pets-jennifer.png"
+                alt="photo of a pet"
+              />
+              <span class="pet-name">Jennifer</span>
+              <button class="btn-pet">Learn more</button>
             </div>
+            <div class="card-pet">
+              <img
+                class="pet-photo"
+                src="../../assets/png/pets/pets-woody.png"
+                alt="photo of a pet"
+              />
+              <span class="pet-name">Woody</span>
+              <button class="btn-pet">Learn more</button>
+            </div>
+            <div class="card-pet">
+              <img
+                class="pet-photo"
+                src="../../assets/png/pets/pets-sophia.png"
+                alt="photo of a pet"
+              />
+              <span class="pet-name">Sophia</span>
+              <button class="btn-pet">Learn more</button>
+            </div>
+            <div class="card-pet">
+              <img
+                class="pet-photo"
+                src="../../assets/png/pets/pets-timmy.png"
+                alt="photo of a pet"
+              />
+              <span class="pet-name">Timmy</span>
+              <button class="btn-pet">Learn more</button>
+            </div>
+            <div class="card-pet">
+              <img
+                class="pet-photo"
+                src="../../assets/png/pets/pets-charly.png"
+                alt="photo of a pet"
+              />
+              <span class="pet-name">Charly</span>
+              <button class="btn-pet">Learn more</button>
+            </div>
+            <div class="card-pet">
+              <img
+                class="pet-photo"
+                src="../../assets/png/pets/pets-scarlet.png"
+                alt="photo of a pet"
+              />
+              <span class="pet-name">Scarlett</span>
+              <button class="btn-pet">Learn more</button>
+            </div>
+            <div class="card-pet">
+              <img
+                class="pet-photo"
+                src="../../assets/png/pets/pets-fredie.png"
+                alt="photo of a pet"
+              />
+              <span class="pet-name">Freddie</span>
+              <button class="btn-pet">Learn more</button>
+            </div>
+          </div>
+          <div class="pets-navigation">
+            <button class="btn-first-page inactive">
+              <svg
+                width="24"
+                height="11"
+                viewBox="0 0 24 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.0333 10.498L9.72748e-05 5.80078V4.69727L9.0333 0V1.33789L1.52353 5.24414L9.0333 9.16016V10.498ZM23.1044 10.498L14.0712 5.80078V4.69727L23.1044 0V1.33789L15.5946 5.24414L23.1044 9.16016V10.498Z"
+                />
+              </svg>
+            </button>
+            <button class="btn-prev-page inactive">
+              <svg
+                width="10"
+                height="11"
+                viewBox="0 0 10 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.0332 10.498L0 5.80078V4.69727L9.0332 0V1.33789L1.52344 5.24414L9.0332 9.16016V10.498Z"
+                />
+              </svg>
+            </button>
+            <button class="btn-current-page active">1</button>
+            <button class="btn-next-page">
+              <svg
+                width="10"
+                height="11"
+                viewBox="0 0 10 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.0332 5.80078L0 10.498V9.16016L7.50977 5.24414L0 1.33789V0L9.0332 4.69727V5.80078Z"
+                />
+              </svg>
+            </button>
+            <button class="btn-last-page">
+              <svg
+                width="24"
+                height="11"
+                viewBox="0 0 24 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.0333 5.80078L9.72748e-05 10.498V9.16016L7.50986 5.24414L9.72748e-05 1.33789V0L9.0333 4.69727V5.80078ZM23.1044 5.80078L14.0712 10.498V9.16016L21.581 5.24414L14.0712 1.33789V0L23.1044 4.69727V5.80078Z"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -103,31 +194,39 @@
         <div class="contacts-info">
           <h3 class="footer-header">For questions and suggestions</h3>
           <a class="footer-item" href="mailto:email@shelter.com">
-            <img src="../../assets/png/footer/icon-email.svg" alt="icon">
+            <img src="../../assets/png/footer/icon-email.svg" alt="icon" />
             <span class="footer-item-text">email@shelter.com</span>
           </a>
           <a class="footer-item" href="tel:+136745677554">
-            <img src="../../assets/png/footer/icon-phone.svg" alt="icon">
-            <span class="footer-item-text" >+13 674 567 75 54</span>
+            <img src="../../assets/png/footer/icon-phone.svg" alt="icon" />
+            <span class="footer-item-text">+13 674 567 75 54</span>
           </a>
         </div>
         <div class="adress-info">
           <h3 class="footer-header">We are waiting for your visit</h3>
           <a
             href="https://maps.app.goo.gl/yZmf9bBfKBNTnvrVA"
-            target="_blank" 
-            class="footer-item">
-            <img src="../../assets/png/footer/icon-marker.svg" alt="icon">
-            <span class="footer-item-text">1 Central Street, Boston (entrance from the store)</span>
+            target="_blank"
+            class="footer-item"
+          >
+            <img src="../../assets/png/footer/icon-marker.svg" alt="icon" />
+            <span class="footer-item-text"
+              >1 Central Street, Boston (entrance from the store)</span
+            >
           </a>
-          <a 
+          <a
             href="https://maps.app.goo.gl/yZmf9bBfKBNTnvrVA"
             target="_blank"
-            class="footer-item">
-            <img src="../../assets/png/footer/icon-marker.svg" alt="icon">
+            class="footer-item"
+          >
+            <img src="../../assets/png/footer/icon-marker.svg" alt="icon" />
             <span class="footer-item-text">18 South Park, London </span>
-          </a></div>
-        <img src="../../assets/png/footer-puppy.png" alt="photo of a puppy with tongou out">
+          </a>
+        </div>
+        <img
+          src="../../assets/png/footer-puppy.png"
+          alt="photo of a puppy with tongou out"
+        />
       </div>
     </footer>
   </body>
