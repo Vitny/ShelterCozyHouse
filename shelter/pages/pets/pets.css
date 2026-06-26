@@ -61,7 +61,7 @@
 
 /* buttons */
 .btn-current-page {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 6%;
@@ -102,7 +102,7 @@
   border-color: var(--color-primary-light);
 }
 
-.active {
+.btn-current-page.active {
   background-color: var(--color-primary);
 }
 
@@ -160,8 +160,14 @@
     gap: 42px;
     padding-bottom: 42px;
   }
-  
+
   .pets-navigation {
     margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-list {
+    background-color: var(--color-light-s);
   }
 }
