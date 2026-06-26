@@ -45,13 +45,25 @@
   gap: 45px;
 }
 
+.pets-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 40px;
+  padding: 15px 0;
+  width: 100%;
+}
+
 .pets-cards {
   padding: unset;
   padding: 15px 0;
   justify-content: center;
   row-gap: 30px;
   column-gap: 40px;
+  display: flex;
   flex-wrap: wrap;
+  height: fit-content;
 }
 
 .pets-navigation {
@@ -61,7 +73,7 @@
 
 /* buttons */
 .btn-current-page {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 6%;
@@ -131,29 +143,21 @@
     padding: 0;
   }
 
-  .card-pet:nth-child(2) {
-    display: flex;
-  }
-
-  .card-pet:nth-child(7),
-  .card-pet:nth-child(8) {
-    display: none;
-  }
-
   .pets-navigation {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pets-page {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media (max-width: 360px) {
   .pets-navigation {
     gap: 10px;
-  }
-
-  .card-pet:nth-child(4),
-  .card-pet:nth-child(5),
-  .card-pet:nth-child(6) {
-    display: none;
   }
 
   .our-friends-section {
