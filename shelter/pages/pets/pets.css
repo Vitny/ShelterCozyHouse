@@ -45,13 +45,25 @@
   gap: 45px;
 }
 
+.pets-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 40px;
+  padding: 15px 0;
+  width: 100%;
+}
+
 .pets-cards {
   padding: unset;
   padding: 15px 0;
   justify-content: center;
   row-gap: 30px;
   column-gap: 40px;
+  display: flex;
   flex-wrap: wrap;
+  height: fit-content;
 }
 
 .pets-navigation {
@@ -102,7 +114,7 @@
   border-color: var(--color-primary-light);
 }
 
-.active {
+.btn-current-page.active {
   background-color: var(--color-primary);
 }
 
@@ -131,17 +143,15 @@
     padding: 0;
   }
 
-  .card-pet:nth-child(2) {
-    display: flex;
-  }
-
-  .card-pet:nth-child(7),
-  .card-pet:nth-child(8) {
-    display: none;
-  }
-
   .pets-navigation {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pets-page {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -150,18 +160,18 @@
     gap: 10px;
   }
 
-  .card-pet:nth-child(4),
-  .card-pet:nth-child(5),
-  .card-pet:nth-child(6) {
-    display: none;
-  }
-
   .our-friends-section {
     gap: 42px;
     padding-bottom: 42px;
   }
-  
+
   .pets-navigation {
     margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-list {
+    background-color: var(--color-light-s);
   }
 }
