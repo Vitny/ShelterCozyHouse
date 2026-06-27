@@ -1,15 +1,12 @@
 // OUR FRIENDS CARDS
 function initSlider() {
-  const pets = [
-    { name: 'Jennifer', img: 'assets/png/pets/pets-jennifer.png' },
-    { name: 'Sophia', img: 'assets/png/pets/pets-sophia.png' },
-    { name: 'Woody', img: 'assets/png/pets/pets-woody.png' },
-    { name: 'Scarlett', img: 'assets/png/pets/pets-scarlet.png' },
-    { name: 'Katrine', img: 'assets/png/pets/pets-katrine.png' },
-    { name: 'Timmy', img: 'assets/png/pets/pets-timmy.png' },
-    { name: 'Freddie', img: 'assets/png/pets/pets-fredie.png' },
-    { name: 'Charly', img: 'assets/png/pets/pets-charly.png' },
-  ]
+  fetch('pets.json')
+    .then((r) => r.json())
+    .then((data) => {
+      const pets = data.map((p) => ({
+        name: p.name,
+        img: 'assets/png/pets/pets-' + p.img.split('/').pop(),
+      }))
 
   const container = document.querySelector('.pets-cards')
   let current = []
@@ -115,7 +112,8 @@ function initSlider() {
     }
   })
 
-  init()
+      init()
+    })
 }
 
 initSlider()
