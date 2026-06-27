@@ -68,7 +68,7 @@
         `<div class="card-pet">
           <img class="pet-photo" src="${pet.img}" alt="photo of a pet" />
           <span class="pet-name">${pet.name}</span>
-          <button class="btn-pet">Learn more</button>
+          <button class="btn-pet" type="button">Learn more</button>
         </div>`,
       )
     })
@@ -114,7 +114,7 @@
   }
 
   function goTo(page, direction) {
-    if (isAnimating) return;
+    if (isAnimating) return
     if (page < 1 || page > getTotalPages()) return
     animateTo(page, direction)
     currentPage = page

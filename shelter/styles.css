@@ -1,5 +1,4 @@
 body.lock-scroll {
-  position: fixed;
   width: 100%;
   overflow: hidden;
 }
@@ -11,14 +10,14 @@ body.lock-scroll {
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 44px;
   line-height: 130%;
   max-width: 310px;
 }
 
 h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 35px;
   line-height: 128%;
   letter-spacing: 6%;
@@ -71,7 +70,7 @@ h2 {
 /* START SCREEN */
 .start-screen {
   background:
-    url("assets/bg/noise_transparent.png"),
+    url('assets/bg/noise_transparent.png'),
     radial-gradient(ellipse 120% 110% at 20% 20%, #5b483a 0%, #262425 100%);
   background-repeat: repeat;
   background-size: auto;
@@ -103,7 +102,7 @@ h2 {
 
 #logo-text {
   color: var(--color-primary);
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 110%;
   letter-spacing: 6%;
   font-size: 2rem;
@@ -182,7 +181,7 @@ h2 {
   background-color: var(--color-primary);
   border-radius: 100px;
 
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 6%;
@@ -477,7 +476,7 @@ h2 {
 }
 
 .pet-name {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
   letter-spacing: 6%;
   color: var(--color-dark-l);
@@ -489,7 +488,7 @@ h2 {
   align-items: center;
   padding: 13px 43px;
 
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 
   font-size: 17px;
   line-height: 130%;
@@ -598,7 +597,7 @@ h2 {
 
 .item-name {
   color: var(--color-dark-l);
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 6%;
@@ -680,7 +679,7 @@ h2 {
 }
 
 .bank-name {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 15px;
   line-height: 110%;
   letter-spacing: 6%;
@@ -703,7 +702,7 @@ h2 {
 }
 
 .card-number {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 6%;
@@ -764,7 +763,7 @@ h2 {
 /* FOOTER */
 #footer {
   background:
-    url("assets/bg/noise_transparent.png"),
+    url('assets/bg/noise_transparent.png'),
     radial-gradient(circle at 15% 40%, #5b483a 0%, #1a1a1c 100%);
   background-repeat: repeat;
   background-size: auto;
@@ -798,7 +797,7 @@ h2 {
   color: var(--color-light-xl);
   text-align: left;
 
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 6%;
@@ -813,7 +812,7 @@ h2 {
 .footer-item-text {
   color: var(--color-primary);
 
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 6%;
@@ -860,5 +859,179 @@ h2 {
 
   .adress-info {
     gap: 40px;
+  }
+}
+
+/* MODAL WINDOW */
+.modal-window {
+  display: none;
+}
+
+.modal-window.active {
+  inset: 0;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.modal-window-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-wrapper {
+  width: fit-content;
+  display: flex;
+  gap: 29px;
+  background-color: var(--color-light-s);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.modal-pet-pic {
+  width: 500px;
+  height: 500px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 50px 20px 0 0;
+}
+
+.name {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 6%;
+}
+
+.breed-line {
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 6%;
+}
+
+.type,
+.breed {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.description {
+  margin-top: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 6%;
+}
+
+.pet-list span {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 6%;
+}
+
+.pet-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.line-header {
+  font-weight: 700;
+}
+
+.pet-list li {
+  position: relative;
+  padding-left: 14px;
+}
+
+.pet-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.btn-modal-close {
+  position: relative;
+  align-self: flex-end;
+  right: -42px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  border-radius: 100px;
+  border: solid 2px var(--color-primary);
+}
+
+.btn-modal-close:hover {
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 1000px) {
+  .modal-wrapper {
+    gap: 9px;
+  }
+
+  .modal-content {
+    margin: 10px 8px 0 0;
+  }
+
+  .modal-pet-pic {
+    width: 350px;
+    height: 350px;
+  }
+
+  .modal-content {
+    width: 261px;
+  }
+
+  .description {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+
+  .pet-list {
+    margin-top: 20px;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 730px) {
+  .modal-content {
+    margin: 9px;
+    align-items: center;
+  }
+
+  .modal-pet-pic {
+    display: none;
+  }
+
+  .modal-content {
+    width: 241px;
+  }
+
+  .description {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+
+  .pet-list {
+    align-self: flex-start;
+    margin-top: 25px;
+    gap: 5px;
   }
 }
